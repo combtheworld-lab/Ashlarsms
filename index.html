@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashlar SMS Updates</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:560px;margin:0 auto;padding:24px 16px;color:#1f2937;line-height:1.5}
+h1{font-size:1.6em;margin-bottom:.3em}
+label{display:block;font-weight:600;margin:16px 0 6px}
+input{width:100%;box-sizing:border-box;padding:10px;font-size:1em;border:1px solid #9ca3af;border-radius:6px}
+button{margin-top:14px;width:100%;padding:12px;font-size:1.05em;background:#1e3a8a;color:#fff;border:0;border-radius:6px;cursor:pointer}
+.consent{font-size:.9em;color:#374151;margin-top:12px}
+#msg{display:none;margin-top:16px;padding:12px;background:#ecfdf5;border:1px solid #10b981;border-radius:6px}
+footer{margin-top:32px;font-size:.85em;color:#6b7280}
+a{color:#1e3a8a}
+</style>
+</head>
+<body>
+<h1>Ashlar SMS Updates</h1>
+<p>Ashlar is a personal communication assistant. Enable SMS to receive and reply to your own messages and account notifications from Ashlar by text.</p>
+<form id="optin" onsubmit="document.getElementById('msg').style.display='block';return false;">
+<label for="phone">Mobile phone number (optional)</label>
+<input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" autocomplete="tel">
+<p class="consent">By clicking Enable SMS, you agree to receive text messages from Ashlar. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help. Consent is not a condition of purchase. See our <a href="terms.html">Terms and Conditions</a>. Privacy: your mobile information will not be shared with third parties or affiliates for marketing or promotional purposes.</p>
+<button type="submit">Enable SMS</button>
+</form>
+<div id="msg" role="status">Thanks! SMS has been enabled for Ashlar. Reply STOP at any time to opt out.</div>
+<footer><a href="terms.html">Terms and Conditions</a> &middot; Ashlar</footer>
+</body>
+</html>
